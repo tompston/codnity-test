@@ -1,0 +1,62 @@
+:root {
+    --input__1_p: 4px 0px;
+    --input__1_pl: 13px;
+}
+
+.form-control {
+    width: 100%;
+    border: var(--border-1-2);
+    padding-left: 13px;
+    border-radius: var(--border-rad-5);
+    padding: var(--input__1_p);
+    padding-left: var(--input__1_pl);
+    transition: border 0.14s ease-in;
+}
+
+.form-control:focus {
+    border-color: var(--main-col-9);
+}
+
+/* credits -> https://codepen.io/peiche/pen/xOVpPo */
+.form-group {
+    margin-top: 20px;
+    position: relative;
+}
+
+.form-control-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 100ms;
+    /* opacity: 0.5; */
+    font-weight: 700;
+    font-size: 11px;
+    padding: var(--input__1_p);
+    padding-left: var(--input__1_pl);
+    margin-top: 4px;
+}
+
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder {
+    font-size: 68%;
+    transform: translate3d(10px, -73%, 0);
+    opacity: 1;
+    background-color: white;
+    padding: 0px 8px;
+}
+
+/*  */
+.forgot-password-link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--main-col-9);
+    transition: all 0.14s ease-in;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(235, 235, 85);
+}
